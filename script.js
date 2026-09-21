@@ -1,58 +1,115 @@
 const recommendations = {
-    beach: "Beach recommendations: Maldives Beach and Bali Beach.",
-    temple: "Temple recommendations: Angkor Wat and Golden Temple.",
-    pakistan: "Country recommendation: Pakistan.",
-    japan: "Country recommendation: Japan."
+    beach: {
+        title: "Beach Recommendations",
+        items: [
+            {
+                name: "Maldives Beach",
+                image: "images/beach1.svg",
+                description: "Relax on the beautiful beaches of the Maldives."
+            },
+            {
+                name: "Bali Beach",
+                image: "images/beach2.svg",
+                description: "Enjoy the tropical beaches and scenery of Bali."
+            }
+        ]
+    },
+
+    temple: {
+        title: "Temple Recommendations",
+        items: [
+            {
+                name: "Angkor Wat",
+                image: "images/temple1.svg",
+                description: "Explore the historic Angkor Wat temple in Cambodia."
+            },
+            {
+                name: "Golden Temple",
+                image: "images/temple2.svg",
+                description: "Visit the famous Golden Temple in India."
+            }
+        ]
+    },
+
+    country: {
+        title: "Country Recommendations",
+        items: [
+            {
+                name: "Pakistan",
+                image: "images/country1.svg",
+                description: "Discover the landscapes, culture, and heritage of Pakistan."
+            },
+            {
+                name: "Japan",
+                image: "images/country2.svg",
+                description: "Experience the culture, technology, and natural beauty of Japan."
+            }
+        ]
+    }
 };
+
+function displayRecommendations(category) {
+    const result = document.getElementById("searchResult");
+    const recommendation = recommendations[category];
+
+    result.innerHTML = `
+        <h2>${recommendation.title}</h2>
+        <div class="search-results-grid">
+            ${recommendation.items.map(item => `
+                <div class="search-result-card">
+                    <img src="${item.image}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                </div>
+            `).join("")}
+        </div>
+    `;
+
+    result.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
 
 function searchRecommendation() {
     const input = document.getElementById("searchInput").value
         .trim()
         .toLowerCase();
 
-    const result = document.getElementById("searchResult");
-
     if (input === "") {
-        result.innerHTML = "<p>Please enter a destination or category.</p>";
+        document.getElementById("searchResult").innerHTML =
+            "<p>Please enter a destination or category.</p>";
         return;
     }
 
     if (
         input.includes("beach") ||
+        input.includes("beaches") ||
         input.includes("maldives") ||
         input.includes("bali")
     ) {
-        result.innerHTML =
-            "<h2>Beach Recommendation</h2><p>" +
-            recommendations.beach +
-            "</p>";
+        displayRecommendations("beach");
 
     } else if (
         input.includes("temple") ||
+        input.includes("temples") ||
         input.includes("angkor") ||
         input.includes("golden")
     ) {
-        result.innerHTML =
-            "<h2>Temple Recommendation</h2><p>" +
-            recommendations.temple +
-            "</p>";
+        displayRecommendations("temple");
 
-    } else if (input.includes("pakistan")) {
-        result.innerHTML =
-            "<h2>Country Recommendation</h2><p>" +
-            recommendations.pakistan +
-            "</p>";
-
-    } else if (input.includes("japan")) {
-        result.innerHTML =
-            "<h2>Country Recommendation</h2><p>" +
-            recommendations.japan +
-            "</p>";
+    } else if (
+        input.includes("country") ||
+        input.includes("countries") ||
+        input.includes("pakistan") ||
+        input.includes("japan")
+    ) {
+        displayRecommendations("country");
 
     } else {
-        result.innerHTML =
+        document.getElementById("searchResult").innerHTML =
             "<h2>Recommendation</h2>" +
-            "<p>No matching destination found. Try beach, temple, Pakistan, or Japan.</p>";
+            "<p>No matching destination found. Try beach, temple, or country.</p>";
     }
 }
 
