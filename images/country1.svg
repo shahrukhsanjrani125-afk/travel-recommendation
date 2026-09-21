@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#8ed0ed"/>
+<path d="M0 390 L180 190 L300 330 L430 150 L610 390Z" fill="#718c73"/>
+<path d="M170 390 L300 250 L400 390Z" fill="#f2f2f2"/>
+<rect y="390" width="800" height="110" fill="#3f7d4a"/>
+<circle cx="670" cy="90" r="50" fill="#ffd166"/>
+<text x="400" y="460" text-anchor="middle" font-size="44" font-family="Arial" fill="#ffffff">Pakistan</text>
+</svg>

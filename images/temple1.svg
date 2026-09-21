@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#9bd7ef"/>
+<rect y="350" width="800" height="150" fill="#6d8f58"/>
+<rect x="170" y="230" width="460" height="120" fill="#b98b5f"/>
+<path d="M180 230 L250 120 L320 230 L400 80 L480 230 L550 120 L620 230Z" fill="#c79a62"/>
+<rect x="300" y="280" width="200" height="70" fill="#765538"/>
+<circle cx="650" cy="80" r="45" fill="#ffd166"/>
+<text x="400" y="445" text-anchor="middle" font-size="40" font-family="Arial" fill="#ffffff">Angkor Wat</text>
+</svg>

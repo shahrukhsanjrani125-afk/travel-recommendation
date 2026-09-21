@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#70c7e8"/>
+<rect y="280" width="800" height="220" fill="#159895"/>
+<path d="M0 350 Q180 300 360 350 T800 350 V500 H0Z" fill="#e8c982"/>
+<path d="M120 320 Q170 190 210 320" fill="none" stroke="#287a45" stroke-width="25"/>
+<path d="M190 320 Q240 180 270 320" fill="none" stroke="#287a45" stroke-width="25"/>
+<circle cx="650" cy="90" r="50" fill="#ffd166"/>
+<text x="400" y="455" text-anchor="middle" font-size="42" font-family="Arial" fill="#ffffff">Bali Beach</text>
+</svg>

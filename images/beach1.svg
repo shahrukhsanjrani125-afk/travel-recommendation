@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#87ceeb"/>
+<rect y="300" width="800" height="200" fill="#20b2aa"/>
+<path d="M0 370 Q200 320 400 370 T800 370 V500 H0Z" fill="#f4d58d"/>
+<circle cx="650" cy="100" r="55" fill="#ffd700"/>
+<text x="400" y="455" text-anchor="middle" font-size="42" font-family="Arial" fill="#ffffff">Maldives Beach</text>
+</svg>

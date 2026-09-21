@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Travel Recommendation</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search destination...">
+        <button onclick="searchRecommendation()">Search</button>
+        <button onclick="clearSearch()">Clear</button>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Explore Your Next Adventure</h1>
+        <p>
+            Discover beautiful beaches, historic temples, and amazing
+            countries around the world. Find your next unforgettable journey
+            with our travel recommendations.
+        </p>
+        <button onclick="scrollToRecommendations()">Explore Recommendations</button>
+    </div>
+</header>
+
+<section id="searchResult" class="search-result"></section>
+
+<main id="recommendations">
+
+    <section class="recommendation-section">
+        <h2>Beach Recommendations</h2>
+
+        <div class="recommendation-container">
+            <div class="recommendation-card">
+                <img src="images/beach1.svg" alt="Maldives Beach">
+                <h3>Maldives Beach</h3>
+                <p>Enjoy crystal-clear water, white sandy beaches, and peaceful surroundings.</p>
+            </div>
+
+            <div class="recommendation-card">
+                <img src="images/beach2.svg" alt="Bali Beach">
+                <h3>Bali Beach</h3>
+                <p>Experience beautiful beaches, tropical scenery, and relaxing coastal views.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendation-section">
+        <h2>Temple Recommendations</h2>
+
+        <div class="recommendation-container">
+            <div class="recommendation-card">
+                <img src="images/temple1.svg" alt="Angkor Wat Temple">
+                <h3>Angkor Wat</h3>
+                <p>Explore the magnificent temple complex and discover its fascinating history.</p>
+            </div>
+
+            <div class="recommendation-card">
+                <img src="images/temple2.svg" alt="Golden Temple">
+                <h3>Golden Temple</h3>
+                <p>Experience beautiful architecture and a peaceful cultural atmosphere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendation-section">
+        <h2>Country Recommendation</h2>
+
+        <div class="recommendation-container">
+            <div class="recommendation-card">
+                <img src="images/country1.svg" alt="Pakistan">
+                <h3>Pakistan</h3>
+                <p>Discover mountains, beaches, historical locations, and diverse landscapes.</p>
+            </div>
+
+            <div class="recommendation-card">
+                <img src="images/country2.svg" alt="Japan">
+                <h3>Japan</h3>
+                <p>Explore fascinating culture, beautiful landscapes, temples, and modern cities.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Travel Recommendation. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

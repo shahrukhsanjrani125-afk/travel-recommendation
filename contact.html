@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Travel Recommendation</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<main class="contact-page">
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>
+            Have a question or need travel recommendations?
+            Send us a message.
+        </p>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p>
+                We would love to hear from you. Contact us for
+                travel ideas, destination suggestions, or feedback.
+            </p>
+
+            <p><strong>Email:</strong> travelrecommendation@example.com</p>
+            <p><strong>Location:</strong> Karachi, Pakistan</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Travel Recommendation. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been submitted.");
+    this.reset();
+});
+</script>
+
+</body>
+</html>
